@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="sayOla()">Ola</button>
+    <button onclick="sayMujeeb()">Mujeed</button>
+    <button onclick="sayChi()">Chiamaka</button> -->
+    <button onclick="sayName('Ola', 90, 60)">Ola</button>
+    <button onclick="sayName('Mujeeb', 80, 20)">Mujeed</button>
+    <button onclick="sayName('Chi', 30, 28)">Chiamaka</button>
+
+
+    <button onclick="dispNum(1)">1</button>
+    <button onclick="dispNum(2)">2</button>
+    <button onclick="dispNum(3)">3</button>
+    <button onclick="dispNum(4)">4</button>
+    <button onclick="dispNum(5)">5</button>
+    <!-- <button onclick="dispNum('+')">+</button>
+    <button onclick="equal()">=</button> -->
+        <input type="text" id="show">
+    <script>
+
+        const dispNum=(num)=>{
+            show.value +=num
+        }
+        // const equal = ()=>{
+        //     show.value 
+        // }
+        // const sayOla = ()=>{
+        //     alert('Ola')
+        // }
+        // const sayMujeeb = ()=>{
+        //     alert('mujeed')
+        // }
+        // const sayChi = ()=>{
+        //     alert('chi')
+        // }
+        const sayName =(student,bankBal,age)  =>{
+            alert(`Name is ${student}, account balance is ${bankBal}, age is ${age}`)
+        }
+    </script>
+</body>
+</html>

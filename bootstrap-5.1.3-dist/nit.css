@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#para{
+    transform: translate(-10vh, -25vh);
+    text-align: justify;
+}
+#vv{
+    transform: translate(8vh, 7vh);
+    font-size: 10pt;
+    text-align: justify;
+}
+#divv{
+    transform: translate(0, 10vh);
+    height: 10vh;
+    color: white;
+    background-color: rgb(192, 189, 189);
+    text-align: center;
+    padding-top: 15px;
+}
+#img{
+    position: fixed;
+    transform: translate(190vh, -1vh);
+}
+#suc{
+    background-color: rgba(34, 221, 34, .3);
+}

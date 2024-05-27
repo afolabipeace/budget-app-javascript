@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.css">
+</head>
+
+<body class="bg-dark text-light">
+    <div class="col-lg-8 col-10 mx-auto mt-l-5 mt-3">
+        <h2 class="text-center my-3">Budget Application</h2>
+        <div class="my-3 shadow">
+            <p class="alert alert-danger p-2 text-center" style="display: none;" id="error1">Please enter your budget</p>
+            <label for="" class="form-label">Enter your budget:</label>
+            <input type="number" class="form-control form-control-sm" id="budget">
+            <button class="btn btn-info my-3 w-100" onclick="submitBudget()">Submit</button>
+        </div>
+        <div class="row">
+            <div class="alert alert-succes p-3 col mx-2">
+                <span class="fs-1 d-block">&#8358</span><br> <span id="showBudget">Budget appears Here</span>
+            </div>
+            <div class="alert alert-succes p-3 col mx-2" >
+                <span class="fs-1 d-block">&#8358</span><br> <span id="showBalance">Balance</span>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <h3>Add items</h3>
+            <p class="alert alert-danger p-2 text-center" style="display: none;" id="error2">Please fill in your details
+            </p>
+            <input type="text" class="my-2 form-control" placeholder="Name" id="itemName">
+            <input type="number" class="my-2 form-control" placeholder="Amount" id="itemAmount">
+            <input type="number" class="my-2 form-control" placeholder="Quantity" id="itemQuantity">
+            <button class="btn btn-info w-100" onclick="addItem()">Add</button>
+        </div>
+
+        <div id="showEverything"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Items</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="text" class="my-2 form-control" placeholder="Name" id="newName">
+            <input type="number" class="my-2 form-control" placeholder="Amount" id="newAmount">
+            <input type="number" class="my-2 form-control" placeholder="Quantity" id="newQuantity">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="editValues()"  data-bs-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="budget.js"></script>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
